@@ -1,0 +1,43 @@
+[project]
+name = "FinIto"
+version = "0.1.0"
+description = "Modeling stock prices with Ito process with unknown parameters"
+authors = [
+    {name = "Ruslan Khaydarpashich", email = "h.ruslan2000@yandex.ru"},
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "plotly",
+    "tqdm",
+    "scikit-learn",
+    "pandas",
+]
+
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[dependency-groups]
+test = [
+    "pytest",
+]
+notebooks = [
+    "jupyter",
+    "ipykernel",
+]
+dev = [
+    "pre-commit",
+]
+
+
