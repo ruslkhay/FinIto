@@ -10,9 +10,11 @@ dependencies = [
     "scipy",
     "matplotlib",
     "plotly",
+    "seaborn",
     "tqdm",
     "scikit-learn",
     "pandas",
+    "yfinance"
 ]
 
 requires-python = ">=3.12"
